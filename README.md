@@ -63,10 +63,10 @@ ZK-Comply permite provar que uma substância está **dentro dos limites legais d
 
 ## 📌 Time
 
-- **Raphael** – Backend / Integração / Front
-- **Luccas** – Frontend / UI/UX
-- **Matheus** – Branding / UX / Storytelling
-- **Marcos** – Circuito ZK / Backend / Infra
+- **Marcos** – Circuito ZK - Backend - Infra/Integração
+- **Raphael** – Backend - Infra/Integração - Frontend
+- **Luccas** – Frontend - UI/UX
+- **Matheus** – Branding/UX
 
 ---
 
