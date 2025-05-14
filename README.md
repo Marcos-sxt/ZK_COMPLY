@@ -56,7 +56,7 @@ ZK-Comply permite provar que uma substância está **dentro dos limites legais d
 | Selecionar ingrediente     | 🔜     |
 | Verificar limite com ZK    | 🔜     |
 | Ver resultado visual       | 🔜     |
-| Logging on-chain (opcional)| 🔜     |
+| Logging on-chain ()        | 🔜     |
 
 
 ---
