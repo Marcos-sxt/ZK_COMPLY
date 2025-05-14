@@ -28,8 +28,8 @@ ZK-Comply permite provar que uma substância está **dentro dos limites legais d
 - 🧠 **Noir** – Circuito ZK (`composition_index`, `threshold`, `hash_commitment`)
 - 🛠️ **Python FastAPI** – Backend de registro, execução da prova e resposta
 - 🎨 **React** – Frontend intuitivo para criar, provar e visualizar composições
-- 🧾 **GitHub Projects** – Organização das entregas
-- (Opcional) **Solidity + Testnet** – Logging público da verificação
+- 🧾 **GitHub** – Organização das entregas
+- ⛓️ **Solidity + Testnet** – Logging público da verificação
 
 ---
 
