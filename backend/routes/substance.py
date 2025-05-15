@@ -28,6 +28,13 @@ def verify_substance(data: VerifyRequest):
 def list_substances():
     return get_all_substances()
 
+@router.get("/substances/{name}")
+def find_substance(name: str):
+    result = get_substance_by_id(name)
+    if not result:
+        raise HTTPException(status_code=404, detail="Substance not found")
+    return result
+
 @router.get("/substances/{id}")
 def find_substance(id: str):
     result = get_substance_by_id(id)

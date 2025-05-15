@@ -37,6 +37,10 @@ def add_substance(name: str, composition: List[int]) -> dict:
 def get_all_substances() -> List[dict]:
     return load_db()
 
+def get_substance_by_name(name: str) -> List[dict]:
+    db = load_db()
+    return [s for s in db if s["name"].lower() == name.lower()]
+
 def get_substance_by_id(id: str) -> dict:
   db = load_db()
   for substance in db:
