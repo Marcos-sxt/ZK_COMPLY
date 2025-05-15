@@ -7,6 +7,8 @@ class SubstanceRequest(BaseModel):
   composition: Annotated[List[int], Field(min_length=2, max_length=30)]
 
 class SubstanceResponse(BaseModel):
+  id: str
   name: str
-  hash: str
+  composition: List[int]
+  hash_commitment: str
   timestamp: datetime
