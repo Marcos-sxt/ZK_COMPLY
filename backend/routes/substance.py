@@ -8,7 +8,7 @@ router = APIRouter()
 
 @router.post("/substance", response_model=SubstanceResponse)
 def create_substance(data: SubstanceRequest):
-  if not 2 <= data.composition <= 30: raise HTTPException(status_code=400, detail="composition must be between 2 and 30")
+  if not 2 <= len(data.composition) <= 30: raise HTTPException(status_code=400, detail="composition must be between 2 and 30")
   hash_commitment = generate_commitment_hash(data.name, data.composition)
   return {
     "name": data.name,
