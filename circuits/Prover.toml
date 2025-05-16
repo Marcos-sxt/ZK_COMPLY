@@ -1,0 +1,12 @@
+# Prover.toml - exemplo para teste local
+# Esse arquivo será sobrescrito pelo backend em tempo de execução
+
+[main]
+composition = [
+  9500, 90500, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+]
+composition_index = 0
+threshold = 10000
+hash_commitment = "0"  # deve ser calculado via pedersen_hash no backend

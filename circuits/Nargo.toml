@@ -1,0 +1,9 @@
+[package]
+name = "zk_comply"
+type = "bin"
+authors = ["ZK_COMPLY"]
+version = "0.1.0"
+description = "ZK Circuit for composition verification"
+# compiler_version = "0.16.0"  # Opcional, mas recomendado
+
+[dependencies]
