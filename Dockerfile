@@ -28,4 +28,4 @@ RUN mkdir -p /app/backend/data
 WORKDIR /app/backend
 
 # 9. Comando para rodar o backend (Railway usa $PORT)
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}"]
