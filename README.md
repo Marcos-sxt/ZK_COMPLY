@@ -150,3 +150,23 @@ railway up
 - `POST /substances/`: Create a new substance
 - `GET /substances/`: List all substances
 - `POST /verify`: Verify a substance's composition
+
+
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+
+
+
+
+
+Ola, durante a semana eu(marcos morais) acabei tendo 3 provas e nao consegui fazer uma boa administracao do projeto. peco desculpas por nao conseguir entregar o MVP com o back e o front integrado(as logicas acabaram ficando separadas do frontend ''https://zkcomply-production.up.railway.app/docs#/'' ), isso tudo foi por minha causa, sinto muito. o MVP tinha potencial pra ser bem mais polido e em decorrencia dessa minha ma administracao tambem houve ruido nas ideias e execucao, por isso nao houve integracao de back e front. de qualquer forma, irei continuar tocando o projeto pra adicionar IA e logar a Prova on-chain. acredito que esse projeto tem muito potencial.
