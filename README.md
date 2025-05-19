@@ -72,7 +72,7 @@ ZK-Comply permite provar que uma substância está **dentro dos limites legais d
 
 ## 🧠 Inspiração
 
-> *“O segredo industrial é seu. A prova de que está seguro, é nossa.”*
+> *"O segredo industrial é seu. A prova de que está seguro, é nossa."*
 
 ---
 
@@ -85,3 +85,68 @@ ZK-Comply permite provar que uma substância está **dentro dos limites legais d
 ## 📃 Licença
 
 MIT © 2025 – ZK-Comply Hackathon Team
+
+## Project Structure
+
+- `backend/`: FastAPI backend
+- `circuits/`: Noir/Noir circuits
+- `contracts/`: Smart contracts
+
+## Local Development
+
+1. Install dependencies:
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # or `venv\Scripts\activate` on Windows
+pip install -r requirements.txt
+```
+
+2. Run the backend:
+```bash
+uvicorn main:app --reload
+```
+
+3. Test the API:
+```bash
+curl -X POST "http://localhost:8000/substances/" \
+  -H "accept: application/json" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "TestSubstance",
+    "composition": [5, 10, 15]
+  }'
+```
+
+## Railway Deployment
+
+1. Install Railway CLI:
+```bash
+npm i -g @railway/cli
+```
+
+2. Login to Railway:
+```bash
+railway login
+```
+
+3. Link your project:
+```bash
+railway link
+```
+
+4. Deploy:
+```bash
+railway up
+```
+
+## Environment Variables
+
+- `DATABASE_URL`: PostgreSQL connection string
+- `PORT`: Port to run the server (set by Railway)
+
+## API Endpoints
+
+- `POST /substances/`: Create a new substance
+- `GET /substances/`: List all substances
+- `POST /verify`: Verify a substance's composition

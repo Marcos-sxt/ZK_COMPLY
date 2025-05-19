@@ -1,15 +1,12 @@
-import hashlib
 import json
 import os
 from datetime import datetime
-from typing import List
+from typing import List, Tuple
 from uuid import uuid4
+from .noir_service import run_noir_proof
+from .utils import normalize_composition, generate_commitment_hash
 
 DB_PATH = "data/substances.json"
-
-def generate_commitment_hash(name: str, composition: List[int]) -> str:
-    fake_string = name + ''.join(map(str, composition))
-    return hashlib.sha256(fake_string.encode()).hexdigest()
 
 def load_db() -> List[dict]:
     if not os.path.exists(DB_PATH):
@@ -23,10 +20,11 @@ def save_db(data: List[dict]):
 
 def add_substance(name: str, composition: List[int]) -> dict:
     db = load_db()
+    normalized = normalize_composition(composition)
     substance = {
         "id": str(uuid4()),
         "name": name,
-        "composition": composition,
+        "composition": normalized,
         "hash_commitment": generate_commitment_hash(name, composition),
         "timestamp": datetime.utcnow().isoformat()
     }
@@ -42,11 +40,30 @@ def get_substance_by_name(name: str) -> List[dict]:
     return [s for s in db if s["name"].lower() == name.lower()]
 
 def get_substance_by_id(id: str) -> dict:
-  db = load_db()
-  for substance in db:
-    if substance["id"] == id:
-      return substance
-  return None
+    db = load_db()
+    for substance in db:
+        if substance["id"] == id:
+            return substance
+    return None
 
-def simulate_verification(name: str, composition_index: int, threshold: int) -> bool:
-    return True  # mock
+def simulate_verification(id: str = None, name: str = None, composition_index: int = None, threshold: int = None) -> Tuple[bool, str]:
+    # Get the substance from the database
+    substance = None
+    if id:
+        substance = get_substance_by_id(id)
+    elif name:
+        substances = get_substance_by_name(name)
+        if substances:
+            substance = substances[0]
+    
+    if not substance:
+        return False, "Substance not found"
+        
+    # Run the Noir proof verification
+    success, message = run_noir_proof(
+        substance["composition"],
+        composition_index,
+        threshold
+    )
+    
+    return success, message

@@ -1,9 +1,17 @@
 from pydantic import BaseModel
+from typing import Optional
 
 class VerifyRequest(BaseModel):
-  name: str
-  composition_index: int
-  threshold: int
+    id: Optional[str] = None
+    name: Optional[str] = None
+    composition_index: int
+    threshold: int
+
+    def __init__(self, **data):
+        super().__init__(**data)
+        if not self.id and not self.name:
+            raise ValueError("Either id or name must be provided")
 
 class VerifyResponse(BaseModel):
-  verified: bool
+    verified: bool
+    message: str

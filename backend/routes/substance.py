@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 
 router = APIRouter()
 
-@router.post("/substance", response_model=SubstanceResponse)
+@router.post("/substances/", response_model=SubstanceResponse)
 def create_substance(data: SubstanceRequest):
   if not 2 <= len(data.composition) <= 30: raise HTTPException(status_code=400, detail="composition must be between 2 and 30")
   substance = add_substance(data.name, data.composition)
@@ -20,9 +20,15 @@ def create_substance(data: SubstanceRequest):
 @router.post("/verify", response_model=VerifyResponse)
 def verify_substance(data: VerifyRequest):
     if not 0 <= data.composition_index < 30:
-      raise HTTPException(status_code=400, detail="composition_index must be between 0 and 29")
-    result = simulate_verification(data.name, data.composition_index, data.threshold)
-    return { "verified": result }
+        raise HTTPException(status_code=400, detail="composition_index must be between 0 and 29")
+    
+    success, message = simulate_verification(
+        id=data.id,
+        name=data.name,
+        composition_index=data.composition_index,
+        threshold=data.threshold
+    )
+    return { "verified": success, "message": message }
 
 @router.get("/substances")
 def list_substances():

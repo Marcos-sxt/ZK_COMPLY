@@ -1,0 +1,17 @@
+Agora posso identificar os problemas:
+Problema de Hash:
+O circuito usa pedersen_hash do Noir
+Nosso backend está usando sha256
+Isso significa que o hash nunca vai bater
+Problema de Threshold:
+No nosso teste, estamos verificando se 6666 < 15
+Isso é falso, então a verificação falha
+Precisamos ajustar o threshold para um valor maior que o valor normalizado
+Problema de Tipos:
+O circuito espera Field para a composição
+Estamos enviando números inteiros
+Pode haver problemas de conversão
+Para resolver, precisamos:
+Implementar o Pedersen hash no backend (ou adaptar o circuito para usar SHA256)
+Ajustar os valores de threshold para considerar a normalização
+Garantir que os tipos de dados estejam corretos
