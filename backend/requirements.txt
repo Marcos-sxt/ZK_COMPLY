@@ -4,4 +4,4 @@ pydantic==2.6.1
 python-multipart==0.0.9
 sqlalchemy
 databases[postgresql] 
-   psycopg2-binary
+psycopg2-binary
