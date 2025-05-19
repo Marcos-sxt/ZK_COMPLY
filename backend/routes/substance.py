@@ -1,12 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from schemas.base import SubstanceRequest, SubstanceResponse
 from schemas.verify import VerifyRequest, VerifyResponse
-from services.substance_service import (
-    add_substance,
-    get_all_substances,
-    get_substance_by_id,
-    simulate_verification
-)
+from services.noir_service import run_noir_proof
 from datetime import datetime, timezone
 
 router = APIRouter()
@@ -19,15 +14,27 @@ def create_substance(data: SubstanceRequest):
 
 @router.post("/verify", response_model=VerifyResponse)
 def verify_substance(data: VerifyRequest):
+    """
+    Verify a substance composition using ZK proofs.
+    The client must provide:
+    - composition: The full composition array
+    - composition_index: The index to verify
+    - threshold: The threshold value to check against
+    - hash_commitment: The hash commitment of the composition
+    """
     if not 0 <= data.composition_index < 30:
         raise HTTPException(status_code=400, detail="composition_index must be between 0 and 29")
     
-    success, message = simulate_verification(
-        id=data.id,
-        name=data.name,
+    if not 2 <= len(data.composition) <= 30:
+        raise HTTPException(status_code=400, detail="composition must be between 2 and 30 elements")
+    
+    success, message = run_noir_proof(
+        composition=data.composition,
         composition_index=data.composition_index,
-        threshold=data.threshold
+        threshold=data.threshold,
+        hash_commitment=data.hash_commitment
     )
+    
     return { "verified": success, "message": message }
 
 @router.get("/substances")
