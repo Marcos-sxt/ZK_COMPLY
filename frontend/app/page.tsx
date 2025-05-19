@@ -1,24 +1,14 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, FlaskRoundIcon as Flask } from "lucide-react"
+import { ArrowRight } from "lucide-react"
+import { Header } from "@/components/header"
+import { FlaskRoundIcon as Flask } from "lucide-react" // Import Flask component
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header/Navigation */}
-      <header className="border-b">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Flask className="h-6 w-6 text-blue-600" />
-            <span className="text-xl font-bold text-blue-700">ZK-Comply</span>
-          </div>
-          <Link href="/dashboard">
-            <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
-              Acessar Dashboard
-            </Button>
-          </Link>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="py-12 md:py-20">
@@ -166,6 +156,59 @@ export default function LandingPage() {
                   </defs>
                 </svg>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefícios Section */}
+      <section className="py-6 mt-0">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-6">
+            <div className="inline-block p-3 bg-blue-100 rounded-full mb-4">
+              <span className="text-4xl">💡</span>
+            </div>
+            <h2 className="text-3xl font-bold text-blue-800 mb-4">Benefícios</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Nossa solução oferece vantagens competitivas significativas para sua empresa.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="text-3xl mb-4">🔒</div>
+              <h3 className="text-xl font-semibold mb-3 text-blue-700">Privacidade Total da Fórmula</h3>
+              <p className="text-gray-600">
+                Proteja seus segredos industriais e propriedade intelectual enquanto demonstra conformidade com
+                regulamentações. Nenhum dado sensível é compartilhado ou armazenado em sistemas externos.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="text-3xl mb-4">⚖️</div>
+              <h3 className="text-xl font-semibold mb-3 text-blue-700">Conformidade Regulamentar Automatizada</h3>
+              <p className="text-gray-600">
+                Simplifique processos de auditoria e conformidade com verificações automatizadas. Reduza custos e tempo
+                gastos em processos manuais de verificação e documentação.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="text-3xl mb-4">⛓️</div>
+              <h3 className="text-xl font-semibold mb-3 text-blue-700">Verificável On-Chain</h3>
+              <p className="text-gray-600">
+                Provas criptográficas registradas em blockchain garantem transparência e imutabilidade. Crie um
+                histórico verificável de conformidade que pode ser auditado a qualquer momento.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="text-3xl mb-4">📈</div>
+              <h3 className="text-xl font-semibold mb-3 text-blue-700">Escalável para laboratórios e farmacêuticas</h3>
+              <p className="text-gray-600">
+                Nossa plataforma é projetada para escalar desde pequenos laboratórios até grandes empresas
+                farmacêuticas, com capacidade para processar milhares de verificações simultaneamente.
+              </p>
             </div>
           </div>
         </div>
