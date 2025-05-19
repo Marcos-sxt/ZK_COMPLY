@@ -27,5 +27,9 @@ RUN mkdir -p /app/backend/data
 # 8. Define diretório de trabalho do backend
 WORKDIR /app/backend
 
-# 9. Comando para rodar o backend (Railway usa $PORT)
-CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+# 9. Copia o start.sh e dá permissão para executá-lo
+COPY backend/start.sh /app/backend/start.sh
+RUN chmod +x /app/backend/start.sh
+
+# 10. Comando para rodar o backend (Railway usa $PORT)
+CMD ["/app/backend/start.sh"]
