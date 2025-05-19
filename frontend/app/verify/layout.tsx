@@ -4,7 +4,7 @@ import type React from "react"
 import { usePathname } from "next/navigation"
 import { Header } from "@/components/header"
 
-export default function DashboardLayout({
+export default function VerifyLayout({
   children,
 }: {
   children: React.ReactNode

@@ -1,24 +1,14 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, FlaskRoundIcon as Flask } from "lucide-react"
+import { ArrowRight } from "lucide-react"
+import { Header } from "@/components/header"
+import { FlaskRoundIcon as Flask } from "lucide-react" // Import Flask component
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header/Navigation */}
-      <header className="border-b">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Flask className="h-6 w-6 text-blue-600" />
-            <span className="text-xl font-bold text-blue-700">ZK-Comply</span>
-          </div>
-          <Link href="/dashboard">
-            <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
-              Acessar Dashboard
-            </Button>
-          </Link>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="py-12 md:py-20">
@@ -165,6 +155,217 @@ export default function LandingPage() {
                     </radialGradient>
                   </defs>
                 </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Como Funciona Section */}
+      <section className="py-14 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <div className="inline-block p-3 bg-blue-100 rounded-full mb-4">
+              <span className="text-4xl">🔐</span>
+            </div>
+            <h2 className="text-3xl font-bold text-blue-800 mb-4">Como Funciona</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Nossa plataforma utiliza tecnologia de ponta para garantir privacidade e conformidade.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-4 text-blue-600 font-bold">
+                1
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-blue-700">Registro Seguro (Off-Chain)</h3>
+              <p className="text-gray-600">
+                Substâncias são registradas com dados privados em um ambiente seguro e isolado.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-4 text-blue-600 font-bold">
+                2
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-blue-700">Lista Pública de Compostos</h3>
+              <p className="text-gray-600">
+                Lista fixa com 30 compostos usados como referência para verificação de conformidade.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-4 text-blue-600 font-bold">
+                3
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-blue-700">Geração de Prova ZK</h3>
+              <p className="text-gray-600">
+                O usuário comprova matematicamente que os limites não foram excedidos, sem revelar dados.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-4 text-blue-600 font-bold">
+                4
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-blue-700">Verificação On-Chain</h3>
+              <p className="text-gray-600">
+                A prova é validada em blockchain, garantindo transparência e imutabilidade sem expor a fórmula.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-12 bg-white p-8 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold text-blue-700 mb-4">Tecnologia Avançada</h3>
+            <p className="text-gray-600">
+              Nossa plataforma utiliza os mais recentes avanços em criptografia de conhecimento zero, incluindo
+              circuitos zk-SNARKs e protocolos de verificação distribuída, garantindo segurança e privacidade sem
+              comprometer a verificabilidade.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefícios Section */}
+      <section className="py-14">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <div className="inline-block p-3 bg-blue-100 rounded-full mb-4">
+              <span className="text-4xl">💡</span>
+            </div>
+            <h2 className="text-3xl font-bold text-blue-800 mb-4">Benefícios</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Nossa solução oferece vantagens competitivas significativas para sua empresa.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="text-3xl mb-4">🔒</div>
+              <h3 className="text-xl font-semibold mb-3 text-blue-700">Privacidade Total da Fórmula</h3>
+              <p className="text-gray-600">
+                Proteja seus segredos industriais e propriedade intelectual enquanto demonstra conformidade com
+                regulamentações. Nenhum dado sensível é compartilhado ou armazenado em sistemas externos.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="text-3xl mb-4">⚖️</div>
+              <h3 className="text-xl font-semibold mb-3 text-blue-700">Conformidade Regulamentar Automatizada</h3>
+              <p className="text-gray-600">
+                Simplifique processos de auditoria e conformidade com verificações automatizadas. Reduza custos e tempo
+                gastos em processos manuais de verificação e documentação.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="text-3xl mb-4">⛓️</div>
+              <h3 className="text-xl font-semibold mb-3 text-blue-700">Verificável On-Chain</h3>
+              <p className="text-gray-600">
+                Provas criptográficas registradas em blockchain garantem transparência e imutabilidade. Crie um
+                histórico verificável de conformidade que pode ser auditado a qualquer momento.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="text-3xl mb-4">📈</div>
+              <h3 className="text-xl font-semibold mb-3 text-blue-700">Escalável para laboratórios e farmacêuticas</h3>
+              <p className="text-gray-600">
+                Nossa plataforma é projetada para escalar desde pequenos laboratórios até grandes empresas
+                farmacêuticas, com capacidade para processar milhares de verificações simultaneamente.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Casos de Uso Section */}
+      <section className="py-14 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <div className="inline-block p-3 bg-blue-100 rounded-full mb-4">
+              <span className="text-4xl">🎯</span>
+            </div>
+            <h2 className="text-3xl font-bold text-blue-800 mb-4">Casos de Uso</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Quem se beneficia</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-0.5">
+                    <span className="text-blue-600 text-sm font-bold">✓</span>
+                  </div>
+                  <p className="text-gray-600">
+                    <span className="font-semibold text-blue-700">Startups com patentes pendentes</span> - Prove
+                    conformidade sem comprometer sua propriedade intelectual em processo de patenteamento.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-0.5">
+                    <span className="text-blue-600 text-sm font-bold">✓</span>
+                  </div>
+                  <p className="text-gray-600">
+                    <span className="font-semibold text-blue-700">Auditorias regulatórias</span> - Simplifique processos
+                    de auditoria mantendo a confidencialidade de fórmulas proprietárias.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-0.5">
+                    <span className="text-blue-600 text-sm font-bold">✓</span>
+                  </div>
+                  <p className="text-gray-600">
+                    <span className="font-semibold text-blue-700">Due diligence no setor químico</span> - Facilite
+                    processos de fusão e aquisição sem expor segredos industriais.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-0.5">
+                    <span className="text-blue-600 text-sm font-bold">✓</span>
+                  </div>
+                  <p className="text-gray-600">
+                    <span className="font-semibold text-blue-700">Validação sem quebra de sigilo industrial</span> -
+                    Comprove a segurança de seus produtos sem revelar sua composição exata.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-bold text-blue-700 mb-6 text-center">Aplicações Práticas</h3>
+            <p className="text-gray-600 mb-6 text-center">
+              A ZK-Comply já está sendo utilizada em projetos piloto com empresas farmacêuticas e laboratórios de
+              pesquisa para:
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-4 text-blue-600 font-bold">
+                  1
+                </div>
+                <p className="text-gray-600">Verificação de conformidade com normas FDA e EMA</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-4 text-blue-600 font-bold">
+                  2
+                </div>
+                <p className="text-gray-600">Certificação de produtos sem revelar fórmulas</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-4 text-blue-600 font-bold">
+                  3
+                </div>
+                <p className="text-gray-600">Auditorias de segurança em tempo real</p>
               </div>
             </div>
           </div>
