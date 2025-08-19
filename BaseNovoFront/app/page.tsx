@@ -39,10 +39,10 @@ export default function ZKComplyLanding() {
               Home
             </a>
             <a href="#" className="text-gray-300 hover:text-green-400 transition-colors text-sm">
-              Funcionalidades
+              Features
             </a>
             <a href="#" className="text-gray-300 hover:text-green-400 transition-colors text-sm">
-              Sobre Nós
+              About Us
             </a>
           </nav>
 
@@ -52,7 +52,7 @@ export default function ZKComplyLanding() {
               variant="outline"
               className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white bg-transparent text-xs sm:text-sm px-3 sm:px-4 py-2"
             >
-              Entrar
+              Login
             </Button>
           </Link>
         </div>
@@ -107,28 +107,28 @@ export default function ZKComplyLanding() {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight px-2">Da amostra ao laudo.</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight px-2">From sample to report.</h1>
 
           {/* Subheading */}
           <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-gray-200 px-2">
-            Provas ZK para estabilidade e pureza
+            ZK proofs for stability and purity
           </h2>
 
           {/* Description */}
           <p className="text-base sm:text-lg text-gray-400 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed px-4">
-            Use Zero-Knowledge Proofs para comprovar qualidade química sem revelar informações sensíveis.
+            Use Zero-Knowledge Proofs to prove chemical quality without revealing sensitive information.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
             <Button className="w-full sm:w-auto bg-green-500 hover:bg-green-600 text-black font-semibold px-6 sm:px-8 py-3 text-base sm:text-lg rounded-lg">
-              Teste agora
+              Try now
             </Button>
             <Button
               variant="ghost"
               className="w-full sm:w-auto text-gray-300 hover:text-white hover:bg-gray-800 px-6 sm:px-8 py-3 text-base sm:text-lg"
             >
-              Falar com especialista
+              Talk to a specialist
             </Button>
           </div>
         </div>
@@ -141,43 +141,34 @@ export default function ZKComplyLanding() {
             {/* Feature 1 */}
             <div className="text-center">
               <h3 className="text-lg sm:text-xl font-semibold mb-4 text-white px-2">
-                Sigilo & Propriedade
-                <br />
-                Intelectual
+                Privacy & Intellectual Property
               </h3>
               <Button className="w-full bg-green-500 hover:bg-green-600 text-black font-medium px-4 sm:px-6 py-4 text-sm rounded-lg min-h-[80px] whitespace-normal leading-tight">
-                Prove ZK que valida sua
-                <br />
-                fórmula sem expor a
-                <br />
-                estrutura.
+                ZK proof that validates your formula
+                <br />without exposing the structure.
               </Button>
             </div>
 
             {/* Feature 2 */}
             <div className="text-center">
               <h3 className="text-lg sm:text-xl font-semibold mb-4 text-white px-2">
-                Verificação Rápida
-                <br />& Escalável
+                Fast & Scalable Verification
               </h3>
               <Button className="w-full bg-green-500 hover:bg-green-600 text-black font-medium px-4 sm:px-6 py-4 text-sm rounded-lg min-h-[80px] whitespace-normal leading-tight">
-                Validação em minutos
-                <br />
-                para qualquer amostra
+                Validation in minutes
+                <br />for any sample
               </Button>
             </div>
 
             {/* Feature 3 */}
             <div className="text-center">
               <h3 className="text-lg sm:text-xl font-semibold mb-4 text-white px-2">
-                Redução de Custos
-                <br />& Eficiência
+                Cost Reduction & Efficiency
               </h3>
               <Button className="w-full bg-green-500 hover:bg-green-600 text-black font-medium px-4 sm:px-6 py-4 text-sm rounded-lg min-h-[80px] whitespace-normal leading-tight">
-                {"> 50 % de economia"}
-                <br />a ciclos de P&D
-                <br />
-                40x mais rápidos
+                {"> 50% savings"}
+                <br />R&D cycles
+                <br />40x faster
               </Button>
             </div>
           </div>
@@ -188,9 +179,8 @@ export default function ZKComplyLanding() {
       <section className="py-12 sm:py-20 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-white px-2">
-            Seus Dados Seguros. Suas
-            <br />
-            Provas Válidas
+            Your Data Secure. Your
+            <br />Proofs Valid
           </h2>
         </div>
       </section>
@@ -199,7 +189,7 @@ export default function ZKComplyLanding() {
       <section className="py-12 sm:py-20 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8 sm:mb-12">
-            <p className="text-base sm:text-lg text-gray-400 mb-6 sm:mb-8">TEXTO MOTIVACIONAL LDL</p>
+            <p className="text-base sm:text-lg text-gray-400 mb-6 sm:mb-8">MOTIVATIONAL TEXT LDL</p>
           </div>
         </div>
       </section>
@@ -208,7 +198,7 @@ export default function ZKComplyLanding() {
       <section className="py-12 sm:py-20 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 sm:mb-16 text-white px-2">
-            O que é o ZK-<span className="text-green-400">Comply</span>?
+            What is ZK-<span className="text-green-400">Comply</span>?
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
@@ -230,13 +220,9 @@ export default function ZKComplyLanding() {
                     <line x1="56" y1="8" x2="44" y2="20" stroke="currentColor" strokeWidth="1" opacity="0.6" />
                   </svg>
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold mb-4 text-center text-white">Integração de SMILES</h3>
+                <h3 className="text-lg sm:text-xl font-bold mb-4 text-center text-white">SMILES Integration</h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Faça upload da sua notação SMILES em sua molécula em algoritmos, O sistema valida automaticamente a
-                  estrutura molecular, log P, pontos de fusão e contagem de átomos associados, incluindo a análise de
-                  grupos funcionais e impurezas. Em paralelo, ancorado modelos de aprendizado de máquina são treinados
-                  para gerar insights sobre reações e propriedades moleculares, permitindo que o sistema automático
-                  produza resultados precisos que eliminam a necessidade de testes de bancada físicos e caros.
+                  Upload your molecule's SMILES notation. The system automatically validates molecular structure, log P, melting points, and atom counts, including analysis of functional groups and impurities. In parallel, anchored machine learning models are trained to generate insights about reactions and molecular properties, allowing the system to produce accurate results that eliminate the need for expensive physical bench tests.
                 </p>
               </div>
             </div>
@@ -270,14 +256,9 @@ export default function ZKComplyLanding() {
                     <line x1="32" y1="44" x2="32" y2="49" stroke="currentColor" strokeWidth="2" />
                   </svg>
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold mb-4 text-center text-white">Química Computacional</h3>
+                <h3 className="text-lg sm:text-xl font-bold mb-4 text-center text-white">Computational Chemistry</h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Nossa engine de química computacional, baseada em RDKit e algoritmos DGAs, realiza um desenvolvimento
-                  profundo de análise molecular, incluindo modelagem, log P, pontos de fusão e contagem de átomos
-                  associados, incluindo a análise de grupos funcionais e impurezas. Em paralelo, ancorado modelos de
-                  aprendizado de máquina são treinados para gerar insights sobre reações e propriedades moleculares,
-                  permitindo que o sistema automático produza resultados precisos que eliminam a necessidade de testes
-                  de bancada físicos e caros.
+                  Our computational chemistry engine, based on RDKit and DGA algorithms, performs deep molecular analysis, including modeling, log P, melting points, and atom counts, including analysis of functional groups and impurities. In parallel, anchored machine learning models are trained to generate insights about reactions and molecular properties, allowing the system to produce accurate results that eliminate the need for expensive physical bench tests.
                 </p>
               </div>
             </div>
@@ -319,12 +300,9 @@ export default function ZKComplyLanding() {
                     <circle cx="52" cy="32" r="2" fill="currentColor" opacity="0.6" />
                   </svg>
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold mb-4 text-center text-white">Provas Zero-knowledge</h3>
+                <h3 className="text-lg sm:text-xl font-bold mb-4 text-center text-white">Zero-Knowledge Proofs</h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Compilamos automaticamente seu protocolo baseado em sistemas provas ZKP não-interativas em máquinas
-                  virtuais que hash de propriedades moleculares (Ethereum, Polygon etc.), garantindo neutralidade e
-                  transparência. Em nosso dashboard, acompanhe registros das provas, histórico de validações e métricas
-                  de desempenho em tempo real, simplificando auditorias e certificações.
+                  We automatically compile your protocol based on non-interactive ZKP systems in virtual machines that hash molecular properties (Ethereum, Polygon, etc.), ensuring neutrality and transparency. In our dashboard, track proof records, validation history, and real-time performance metrics, simplifying audits and certifications.
                 </p>
               </div>
             </div>
@@ -336,62 +314,56 @@ export default function ZKComplyLanding() {
       <section className="py-12 sm:py-20 px-4 sm:px-6 bg-gray-900/50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-white px-2">
-            Faça parte da revolução <span className="text-green-400">ZK</span> na química
+            Be part of the <span className="text-green-400">ZK</span> revolution in chemistry
           </h2>
 
           <p className="text-base sm:text-lg text-gray-300 mb-8 sm:mb-12 max-w-3xl mx-auto px-4">
-            Junte-se a pesquisadores e empresas visionárias que estão redescobrindo o poder do{" "}
-            <span className="text-green-400">P&D</span>.
+            Join visionary researchers and companies rediscovering the power of <span className="text-green-400">R&D</span>.
           </p>
 
           <div className="text-left max-w-2xl mx-auto mb-8 sm:mb-12 px-4">
             <p className="text-lg sm:text-xl text-white mb-6 sm:mb-8">
-              Com o ZK-<span className="text-green-400">Comply</span>, você:
+              With ZK-<span className="text-green-400">Comply</span>, you:
             </p>
 
             <div className="space-y-4 sm:space-y-6">
               <div className="flex items-start space-x-3 sm:space-x-4">
                 <div className="w-2 h-2 bg-green-400 rounded-full mt-2 sm:mt-3 flex-shrink-0"></div>
                 <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-                  <span className="text-white font-semibold">Valida</span> estruturas moleculares em minutos,{" "}
-                  <span className="text-green-400">sem expor</span> uma única ligação química
+                  <span className="text-white font-semibold">Validate</span> molecular structures in minutes, <span className="text-green-400">without exposing</span> a single chemical bond
                 </p>
               </div>
 
               <div className="flex items-start space-x-3 sm:space-x-4">
                 <div className="w-2 h-2 bg-green-400 rounded-full mt-2 sm:mt-3 flex-shrink-0"></div>
                 <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-                  <span className="text-green-400">Acelera</span> seus ciclos de desenvolvimento em até{" "}
-                  <span className="text-green-400 font-bold">40%</span>, liberando tempo para inovação
+                  <span className="text-green-400">Accelerate</span> your development cycles by up to <span className="text-green-400 font-bold">40%</span>, freeing time for innovation
                 </p>
               </div>
 
               <div className="flex items-start space-x-3 sm:space-x-4">
                 <div className="w-2 h-2 bg-green-400 rounded-full mt-2 sm:mt-3 flex-shrink-0"></div>
                 <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-                  <span className="text-green-400">Reduz</span> custos em mais de{" "}
-                  <span className="text-green-400 font-bold">50%</span>, eliminando testes de bancada desnecessários
+                  <span className="text-green-400">Reduce</span> costs by more than <span className="text-green-400 font-bold">50%</span>, eliminating unnecessary bench tests
                 </p>
               </div>
 
               <div className="flex items-start space-x-3 sm:space-x-4">
                 <div className="w-2 h-2 bg-green-400 rounded-full mt-2 sm:mt-3 flex-shrink-0"></div>
                 <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-                  Garante auditabilidade <span className="text-green-400">on-chain</span>, com{" "}
-                  <span className="text-green-400">hash imutável</span> e relatórios prontos para compliance
+                  Ensure <span className="text-green-400">on-chain</span> auditability, with <span className="text-green-400">immutable hash</span> and ready-to-use compliance reports
                 </p>
               </div>
             </div>
           </div>
 
           <p className="text-base sm:text-lg text-gray-300 mb-8 sm:mb-10 max-w-3xl mx-auto px-4">
-            Transforme sua <span className="text-green-400">próxima descoberta</span> em prova digital confiável e
-            conquiste <span className="text-green-400">vantagem competitiva</span>.
+            Turn your <span className="text-green-400">next discovery</span> into reliable digital proof and gain <span className="text-green-400">competitive advantage</span>.
           </p>
 
           <div className="px-4">
             <Button className="w-full sm:w-auto bg-green-500 hover:bg-green-600 text-black font-semibold px-6 sm:px-10 py-3 sm:py-4 text-base sm:text-xl rounded-lg">
-              Experimente grátis e seja pioneiro
+              Try for free and be a pioneer
             </Button>
           </div>
         </div>
@@ -429,19 +401,19 @@ export default function ZKComplyLanding() {
                   ZK-<span className="text-green-400">Comply</span>
                 </span>
               </div>
-              <p className="text-gray-400 text-sm">Tecnologia Zero-Knowledge para laboratórios e indústria química.</p>
+              <p className="text-gray-400 text-sm">Zero-Knowledge technology for laboratories and chemical industry.</p>
             </div>
             <div>
-              <h4 className="font-semibold mb-4 text-white">Produto</h4>
+              <h4 className="font-semibold mb-4 text-white">Product</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li>
                   <a href="#" className="hover:text-green-400 transition-colors">
-                    Funcionalidades
+                    Features
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-green-400 transition-colors">
-                    Preços
+                    Pricing
                   </a>
                 </li>
                 <li>
@@ -451,17 +423,17 @@ export default function ZKComplyLanding() {
                 </li>
                 <li>
                   <a href="#" className="hover:text-green-400 transition-colors">
-                    Documentação
+                    Documentation
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4 text-white">Empresa</h4>
+              <h4 className="font-semibold mb-4 text-white">Company</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li>
                   <a href="#" className="hover:text-green-400 transition-colors">
-                    Sobre Nós
+                    About Us
                   </a>
                 </li>
                 <li>
@@ -471,22 +443,22 @@ export default function ZKComplyLanding() {
                 </li>
                 <li>
                   <a href="#" className="hover:text-green-400 transition-colors">
-                    Carreiras
+                    Careers
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-green-400 transition-colors">
-                    Contato
+                    Contact
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4 text-white">Suporte</h4>
+              <h4 className="font-semibold mb-4 text-white">Support</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li>
                   <a href="#" className="hover:text-green-400 transition-colors">
-                    Central de Ajuda
+                    Help Center
                   </a>
                 </li>
                 <li>
@@ -496,19 +468,19 @@ export default function ZKComplyLanding() {
                 </li>
                 <li>
                   <a href="#" className="hover:text-green-400 transition-colors">
-                    Segurança
+                    Security
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-green-400 transition-colors">
-                    Privacidade
+                    Privacy
                   </a>
                 </li>
               </ul>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2024 ZK-Comply. Todos os direitos reservados.</p>
+            <p>&copy; 2024 ZK-Comply. All rights reserved.</p>
           </div>
         </div>
       </footer>
