@@ -1,0 +1,79 @@
+{
+  "pipeline_id": "pipeline_20250726_012330",
+  "smiles": "CCO",
+  "circuit_type": "logp",
+  "timestamp": "2025-07-26T01:23:30.818953",
+  "stages": {
+    "witness_generation": {
+      "success": true,
+      "circuit_name": "simple_compliance",
+      "witness_file": "/home/user/Documents/ZK_COMPLY/proofs/input_logp_012330.json",
+      "metadata": {
+        "smiles": "CCO",
+        "logp_original": -0.001,
+        "threshold_original": 5.0,
+        "is_compliant": true,
+        "scaling_factor": 1000
+      },
+      "compliance_result": true
+    },
+    "proof_generation": {
+      "success": true,
+      "proof_id": "pipeline_20250726_012330",
+      "metadata": {
+        "proof_id": "pipeline_20250726_012330",
+        "circuit": "simple_compliance",
+        "timestamp": "2025-07-26T01:23:33.054872",
+        "witness_inputs": 3,
+        "public_outputs": 2,
+        "verification": {
+          "valid": true,
+          "output": "\u001b[32;22m[INFO]  \u001b[39;1msnarkJS\u001b[0m: OK!",
+          "verification_key": "/home/user/Documents/ZK_COMPLY/circuits/verification_key.json"
+        },
+        "files": {
+          "proof": "/home/user/Documents/ZK_COMPLY/proofs/pipeline_20250726_012330_proof.json",
+          "public": "/home/user/Documents/ZK_COMPLY/proofs/pipeline_20250726_012330_public.json",
+          "witness_wtns": "/home/user/Documents/ZK_COMPLY/proofs/pipeline_20250726_012330_witness.wtns"
+        }
+      },
+      "proof_data": {
+        "pi_a": [
+          "3618643276975668163517500133918277563591834062685430782737432101588457731688",
+          "535022583093275953166701633912671354005657338628722377952802104024702013911",
+          "1"
+        ],
+        "pi_b": [
+          [
+            "12869716969875416725939774354560114242073867655765020668123714278151804533729",
+            "13993510048165872697477134762302580717323840149310682209691934703236047576168"
+          ],
+          [
+            "11511897950194799815269903367228493010867986944504318638914208533155326106489",
+            "21637815276961800518502907490487674069161854885421752647396091324579239901325"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        "pi_c": [
+          "3171017211696631413161357122038113781500090535854841219969917867656261939195",
+          "7520825186247220822300855341263577213064944936043451523871791473216543838400",
+          "1"
+        ],
+        "protocol": "groth16",
+        "curve": "bn128"
+      },
+      "public_data": [
+        "1",
+        "2870863897"
+      ],
+      "vkey_file": "/home/user/Documents/ZK_COMPLY/circuits/verification_key.json",
+      "proof_file": "/home/user/Documents/ZK_COMPLY/proofs/pipeline_20250726_012330_proof.json",
+      "public_file": "/home/user/Documents/ZK_COMPLY/proofs/pipeline_20250726_012330_public.json"
+    }
+  },
+  "success": true,
+  "final_transaction_hash": null
+}

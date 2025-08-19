@@ -1,0 +1,41 @@
+{
+  "pipeline_id": "pipeline_20250726_002402",
+  "smiles": "CCO",
+  "circuit_type": "pka",
+  "timestamp": "2025-07-26T00:24:02.213648",
+  "stages": {
+    "witness_generation": {
+      "success": true,
+      "circuit_name": "simple_compliance",
+      "witness_file": "/home/user/Documents/ZK_COMPLY/proofs/input_pka_002402.json",
+      "metadata": {
+        "smiles": "CCO",
+        "pka_values": {
+          "acidic": [],
+          "basic": [],
+          "min": 7.0,
+          "max": 7.0,
+          "avg": 7.0
+        },
+        "is_compliant": true,
+        "raw_data": {
+          "acidic_pkas": [],
+          "basic_pkas": [],
+          "raw_response": {
+            "method": "rdkit_fallback",
+            "note": "Simplified estimation"
+          }
+        }
+      },
+      "compliance_result": true
+    },
+    "proof_generation": {
+      "success": false,
+      "error": "Erro snarkjs: ",
+      "proof_id": "pipeline_20250726_002402"
+    }
+  },
+  "success": false,
+  "final_transaction_hash": null,
+  "error": "Erro no pipeline: Falha na gera\u00e7\u00e3o de prova ZK"
+}

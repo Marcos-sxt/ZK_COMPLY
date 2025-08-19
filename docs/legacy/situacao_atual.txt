@@ -1,0 +1,55 @@
+✅ Status Atual — O que Já Funciona
+1. Docking (ZK-Modulo 1)
+
+    ✅ Executa compute_docking.py com Vina, gera witness_docking.json com afinidade (ex: –2.559 → –2559).
+
+    Pipeline de circuitos Noir e prova da primeira etapa estão funcionando.
+
+2. Log P / Solubilidade (ZK-Modulo 2)
+
+    ✅ Script compute_logp.py roda localmente com RDKit, gera witness_logp.json.
+
+    Valores plausíveis (ex: log P=0.971, solubilidade=6.455 mg/L).
+
+3. pKa (ZK-Modulo 3)
+
+    ❌ Opções anteriores (OpenBabel, cxcalc, OPERA) abriram dependências pesadas ou exigência de login.
+
+    🚫 pkasolver não estava disponível via pip e não instalado — modelo não acessível.
+
+4. QSAR Toxicidade (ZK-Modulo 4)
+
+    ❌ Tentativa com ProTox-II retornou HTML em vez de JSON.
+
+    ❌ API do ADMETlab deu erro 500.
+
+    ✅ Ainda temos alternativa local via scraping ou EPA TEST.
+
+🔬 O que ainda precisa ser resolvido
+
+    Obter um método local para cálculo de pKa com precisão razoável (~0.5–1).
+
+    Obter método local para toxicidade que gere um score quantitativo confiável.
+
+🧭 Estratégia ideal para MVP (Pipeline enxuto e local)
+✔️ pKa (Módulo 3)
+
+    Instalar e usar MolGpKa, modelo open-source de GNN para predição de pKa.
+
+        Não está no PyPI, mas disponível no GitHub
+        GitHub+9GitHub+9PMC+9
+        NYU Scholars+2Frontiers+2GitHub+2
+        .
+
+        Exige ambiente Python com RDKit, PyTorch, etc.
+
+        Precisão típica de cerca de 0.5–1.0 unidade pKa em benchmarks
+        GitHub
+        ACS Publications
+        .
+
+✔️ QSAR Toxicidade (Módulo 4)
+
+    Usar pkCSM via scraping HTML (score e LD₅₀) ou instalar EPA TEST.
+
+    Sugiro scraping com BeautifulSoup como alternativa leve.

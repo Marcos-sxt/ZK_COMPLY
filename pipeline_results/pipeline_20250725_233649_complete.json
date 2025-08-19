@@ -1,0 +1,85 @@
+{
+  "pipeline_id": "pipeline_20250725_233649",
+  "smiles": "CCO",
+  "circuit_type": "logp",
+  "timestamp": "2025-07-25T23:36:49.808885",
+  "stages": {
+    "witness_generation": {
+      "success": true,
+      "circuit_name": "simple_compliance",
+      "witness_file": "/home/user/Documents/ZK_COMPLY/proofs/input_logp_233649.json",
+      "metadata": {
+        "smiles": "CCO",
+        "logp_original": -0.001,
+        "threshold_original": 5.0,
+        "is_compliant": true,
+        "scaling_factor": 1000
+      },
+      "compliance_result": true
+    },
+    "proof_generation": {
+      "success": true,
+      "proof_id": "pipeline_20250725_233649",
+      "metadata": {
+        "proof_id": "pipeline_20250725_233649",
+        "circuit": "simple_compliance",
+        "timestamp": "2025-07-25T23:36:52.376101",
+        "witness_inputs": 3,
+        "public_outputs": 2,
+        "verification": {
+          "valid": true,
+          "output": "\u001b[32;22m[INFO]  \u001b[39;1msnarkJS\u001b[0m: OK!",
+          "verification_key": "/home/user/Documents/ZK_COMPLY/circuits/verification_key.json"
+        },
+        "files": {
+          "proof": "/home/user/Documents/ZK_COMPLY/proofs/pipeline_20250725_233649_proof.json",
+          "public": "/home/user/Documents/ZK_COMPLY/proofs/pipeline_20250725_233649_public.json",
+          "witness_wtns": "/home/user/Documents/ZK_COMPLY/proofs/pipeline_20250725_233649_witness.wtns"
+        }
+      },
+      "proof_data": {
+        "pi_a": [
+          "7265498350183985542990491894260996604390646128118776014248090657513688229031",
+          "17129180865431710986065196845187254598563393575937649124838223096427406863593",
+          "1"
+        ],
+        "pi_b": [
+          [
+            "3974109793977076063296728174101799973767295907692899469469165546929865662657",
+            "4577172627096038340134442968125482503464255830262335087706277164457422960721"
+          ],
+          [
+            "10569530603443916695100498191124608868546881629033116135547511579405244931328",
+            "21047931373162730123056676955168409698554835026005310596409311185874311395453"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        "pi_c": [
+          "4192808929098977263768268410692738694734804794387348937621621753671182878149",
+          "3801968077753580353916225586844385520099868703777066646926246184674643015884",
+          "1"
+        ],
+        "protocol": "groth16",
+        "curve": "bn128"
+      },
+      "public_data": [
+        "1",
+        "2870863897"
+      ],
+      "vkey_file": "/home/user/Documents/ZK_COMPLY/circuits/verification_key.json",
+      "proof_file": "/home/user/Documents/ZK_COMPLY/proofs/pipeline_20250725_233649_proof.json",
+      "public_file": "/home/user/Documents/ZK_COMPLY/proofs/pipeline_20250725_233649_public.json"
+    },
+    "zkverify_submission": {
+      "success": false,
+      "proof_id": "pipeline_20250725_233649",
+      "error": "Erro na submiss\u00e3o: 2025-07-25 23:36:57        API/INIT: RPC methods not decorated: chainHead_v1_body, chainHead_v1_call, chainHead_v1_continue, chainHead_v1_follow, chainHead_v1_header, chainHead_v1_stopOperation, chainHead_v1_storage, chainHead_v1_unfollow, chainHead_v1_unpin, chainSpec_v1_chainName, chainSpec_v1_genesisHash, chainSpec_v1_properties, ismp_queryChallengePeriod, ismp_queryChildTrieProof, ismp_queryConsensusState, ismp_queryEvents, ismp_queryEventsWithMetadata, ismp_queryRequests, ismp_queryResponses, ismp_queryStateMachineLatestHeight, ismp_queryStateMachineUpdateTime, ismp_queryStateProof, transactionWatch_v1_submitAndWatch, transactionWatch_v1_unwatch, transaction_v1_broadcast, transaction_v1_stop\n\u274c Erro na submiss\u00e3o: Error: Invalid input: Either proofData or extrinsic must be provided.\n    at /home/user/Documents/ZK_COMPLY/node_modules/zkverifyjs/dist/commonjs/api/verify/index.js:25:19\n    at verify (/home/user/Documents/ZK_COMPLY/node_modules/zkverifyjs/dist/commonjs/api/verify/index.js:26:11)\n    at VerificationManager.executeVerify (/home/user/Documents/ZK_COMPLY/node_modules/zkverifyjs/dist/commonjs/session/managers/verification/index.js:234:55)\n    at VerificationBuilder.execute (/home/user/Documents/ZK_COMPLY/node_modules/zkverifyjs/dist/commonjs/session/builders/verify/index.js:28:21)\n    at submitProof (/home/user/Documents/ZK_COMPLY/temp_submit_pipeline_20250725_233649.js:31:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n",
+      "output": "\ud83d\udd17 Conectando com zkVerify...\n\ud83d\udcc1 Carregando arquivos da prova...\n\ud83d\udce4 Submetendo prova Groth16...\n\u2705 Prova submetida com sucesso!\n\u23f3 Aguardando confirma\u00e7\u00e3o...\n"
+    }
+  },
+  "success": true,
+  "final_transaction_hash": null
+}

@@ -1,0 +1,13 @@
+# Dependências gerais do pipeline ZK
+fastapi
+uvicorn
+pydantic
+requests
+# Dependências científicas e de química
+rdkit
+numpy
+pillow
+acpype
+# Para integração com scripts externos (GROMACS, OpenBabel, etc.)
+# (Esses precisam estar instalados no sistema, não via pip)
+# openbabel (obabel) e gromacs (gmx) devem estar no PATH 

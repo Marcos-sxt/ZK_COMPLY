@@ -1,0 +1,87 @@
+{
+  "pipeline_id": "pipeline_20250725_233924",
+  "smiles": "CCO",
+  "circuit_type": "logp",
+  "timestamp": "2025-07-25T23:39:24.066320",
+  "stages": {
+    "witness_generation": {
+      "success": true,
+      "circuit_name": "simple_compliance",
+      "witness_file": "/home/user/Documents/ZK_COMPLY/proofs/input_logp_233924.json",
+      "metadata": {
+        "smiles": "CCO",
+        "logp_original": -0.001,
+        "threshold_original": 5.0,
+        "is_compliant": true,
+        "scaling_factor": 1000
+      },
+      "compliance_result": true
+    },
+    "proof_generation": {
+      "success": true,
+      "proof_id": "pipeline_20250725_233924",
+      "metadata": {
+        "proof_id": "pipeline_20250725_233924",
+        "circuit": "simple_compliance",
+        "timestamp": "2025-07-25T23:39:26.616457",
+        "witness_inputs": 3,
+        "public_outputs": 2,
+        "verification": {
+          "valid": true,
+          "output": "\u001b[32;22m[INFO]  \u001b[39;1msnarkJS\u001b[0m: OK!",
+          "verification_key": "/home/user/Documents/ZK_COMPLY/circuits/verification_key.json"
+        },
+        "files": {
+          "proof": "/home/user/Documents/ZK_COMPLY/proofs/pipeline_20250725_233924_proof.json",
+          "public": "/home/user/Documents/ZK_COMPLY/proofs/pipeline_20250725_233924_public.json",
+          "witness_wtns": "/home/user/Documents/ZK_COMPLY/proofs/pipeline_20250725_233924_witness.wtns"
+        }
+      },
+      "proof_data": {
+        "pi_a": [
+          "1668286479720872182013815612176226956741303397935049190033306737760635972754",
+          "9696880769650389211616635539842775029417439210299136978090505062647814197360",
+          "1"
+        ],
+        "pi_b": [
+          [
+            "6401049453581843026191050319504791808068417729666330463016155948610599163553",
+            "4937017617826031724564867393607693050573714612936240846354806599265178233171"
+          ],
+          [
+            "15960504979500507937666030340437213861131138399011346340413288704465812202005",
+            "17030586868667294394621415066403386667751901423010931466940690896020996225188"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        "pi_c": [
+          "8890041851809087976132484784870436941077808411626917500520494778251354456028",
+          "6317107330004157100540443947358188766739341777330968466120129252580550609567",
+          "1"
+        ],
+        "protocol": "groth16",
+        "curve": "bn128"
+      },
+      "public_data": [
+        "1",
+        "2870863897"
+      ],
+      "vkey_file": "/home/user/Documents/ZK_COMPLY/circuits/verification_key.json",
+      "proof_file": "/home/user/Documents/ZK_COMPLY/proofs/pipeline_20250725_233924_proof.json",
+      "public_file": "/home/user/Documents/ZK_COMPLY/proofs/pipeline_20250725_233924_public.json"
+    },
+    "zkverify_submission": {
+      "success": true,
+      "proof_id": "pipeline_20250725_233924",
+      "transaction_hash": "0xcc7a7cdb1c8d2c7ca2774c37377e045f4596512259775e2e0693f37b67ff076d",
+      "block_explorer_url": "https://zkverify.gelato.network/tx/0xcc7a7cdb1c8d2c7ca2774c37377e045f4596512259775e2e0693f37b67ff076d",
+      "submission_time": "2025-07-25T23:39:54.091961",
+      "output": "\ud83d\udd17 Conectando com zkVerify...\n\ud83d\udcc1 Carregando arquivos da prova...\n\ud83d\udce4 Submetendo prova Groth16...\n\u2705 Prova submetida com sucesso!\n\u23f3 Aguardando confirma\u00e7\u00e3o...\n\ud83c\udf89 Prova confirmada na blockchain!\nTransaction Hash: 0xcc7a7cdb1c8d2c7ca2774c37377e045f4596512259775e2e0693f37b67ff076d\nBlock Hash: 0x36a7eaec34ec75eac859ad086691fbbbc9570a1cf0ae2d99b1d24f46240edf69\nBlock Number: undefined\n"
+    }
+  },
+  "success": true,
+  "final_transaction_hash": "0xcc7a7cdb1c8d2c7ca2774c37377e045f4596512259775e2e0693f37b67ff076d"
+}

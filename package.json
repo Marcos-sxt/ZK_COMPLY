@@ -1,0 +1,37 @@
+{
+  "name": "zk-comply-blockchain-integration",
+  "version": "1.0.0",
+  "description": "ZK_COMPLY - Pipeline completo de compliance farmacêutica com zero-knowledge proofs e blockchain zkVerify",
+  "author": "Marcos Antonio Morais Braga <marcos.sxt@gmail.com>",
+  "license": "PROPRIETARY",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Marcos-sxt/zk_comply_prod.git"
+  },
+  "keywords": [
+    "zero-knowledge",
+    "blockchain",
+    "pharmaceutical",
+    "compliance",
+    "zkverify",
+    "barretenberg",
+    "noir"
+  ],
+  "dependencies": {
+    "@polkadot/api": "^16.4.2",
+    "@polkadot/keyring": "^13.5.3",
+    "@polkadot/util": "^13.5.3",
+    "@polkadot/util-crypto": "^13.5.3",
+    "circomlib": "^2.0.5",
+    "snarkjs": "^0.7.5",
+    "zkverifyjs": "^0.16.1"
+  },
+  "scripts": {
+    "test-zkverify": "node scripts/test_zkverify_connection.js",
+    "submit-proof": "node scripts/submit_proof_to_zkverify.js"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}

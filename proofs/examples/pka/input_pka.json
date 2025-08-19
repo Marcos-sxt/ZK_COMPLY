@@ -1,0 +1,8 @@
+{
+  "pka_min": 7000,
+  "pka_max": 7000,
+  "pka_avg": 7000,
+  "molecule_hash": 2870863897,
+  "pka_min_threshold": 2000,
+  "pka_max_threshold": 12000
+}

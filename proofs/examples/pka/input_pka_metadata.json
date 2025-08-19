@@ -1,0 +1,19 @@
+{
+  "smiles": "CCO",
+  "pka_values": {
+    "acidic": [],
+    "basic": [],
+    "min": 7.0,
+    "max": 7.0,
+    "avg": 7.0
+  },
+  "is_compliant": true,
+  "raw_data": {
+    "acidic_pkas": [],
+    "basic_pkas": [],
+    "raw_response": {
+      "method": "rdkit_fallback",
+      "note": "Simplified estimation"
+    }
+  }
+}

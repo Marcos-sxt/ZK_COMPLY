@@ -1,0 +1,17 @@
+{
+  "proof_id": "pipeline_20250725_233924",
+  "circuit": "simple_compliance",
+  "timestamp": "2025-07-25T23:39:26.616457",
+  "witness_inputs": 3,
+  "public_outputs": 2,
+  "verification": {
+    "valid": true,
+    "output": "\u001b[32;22m[INFO]  \u001b[39;1msnarkJS\u001b[0m: OK!",
+    "verification_key": "/home/user/Documents/ZK_COMPLY/circuits/verification_key.json"
+  },
+  "files": {
+    "proof": "/home/user/Documents/ZK_COMPLY/proofs/pipeline_20250725_233924_proof.json",
+    "public": "/home/user/Documents/ZK_COMPLY/proofs/pipeline_20250725_233924_public.json",
+    "witness_wtns": "/home/user/Documents/ZK_COMPLY/proofs/pipeline_20250725_233924_witness.wtns"
+  }
+}

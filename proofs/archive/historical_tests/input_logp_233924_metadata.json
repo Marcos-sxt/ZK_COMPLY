@@ -1,0 +1,7 @@
+{
+  "smiles": "CCO",
+  "logp_original": -0.001,
+  "threshold_original": 5.0,
+  "is_compliant": true,
+  "scaling_factor": 1000
+}

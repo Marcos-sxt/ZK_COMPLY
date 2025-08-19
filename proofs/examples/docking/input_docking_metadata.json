@@ -1,0 +1,7 @@
+{
+  "smiles": "CCO",
+  "affinity_kcal_mol": -1.26,
+  "threshold_kcal_mol": -7.0,
+  "is_compliant": false,
+  "receptor_used": "/home/user/Documents/ZK_COMPLY/data/receptors/default_receptor.pdb"
+}

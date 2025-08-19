@@ -1,0 +1,8 @@
+{
+  "success": true,
+  "proof_id": "pipeline_20250725_233924",
+  "transaction_hash": "0xcc7a7cdb1c8d2c7ca2774c37377e045f4596512259775e2e0693f37b67ff076d",
+  "block_explorer_url": "https://zkverify.gelato.network/tx/0xcc7a7cdb1c8d2c7ca2774c37377e045f4596512259775e2e0693f37b67ff076d",
+  "submission_time": "2025-07-25T23:39:54.091961",
+  "output": "\ud83d\udd17 Conectando com zkVerify...\n\ud83d\udcc1 Carregando arquivos da prova...\n\ud83d\udce4 Submetendo prova Groth16...\n\u2705 Prova submetida com sucesso!\n\u23f3 Aguardando confirma\u00e7\u00e3o...\n\ud83c\udf89 Prova confirmada na blockchain!\nTransaction Hash: 0xcc7a7cdb1c8d2c7ca2774c37377e045f4596512259775e2e0693f37b67ff076d\nBlock Hash: 0x36a7eaec34ec75eac859ad086691fbbbc9570a1cf0ae2d99b1d24f46240edf69\nBlock Number: undefined\n"
+}

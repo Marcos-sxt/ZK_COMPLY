@@ -1,0 +1,9 @@
+{
+  "cyp1a2_score": 299,
+  "cyp2d6_score": 199,
+  "cyp3a4_score": 345,
+  "avg_score": 281,
+  "molecule_hash": 2870863897,
+  "cyp_min_threshold": 100,
+  "cyp_max_threshold": 1000
+}

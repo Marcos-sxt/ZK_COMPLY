@@ -1,0 +1,17 @@
+{
+  "smiles": "CCO",
+  "properties": {
+    "logp": -0.001,
+    "molecular_weight": 46.1,
+    "h_acceptors": 1,
+    "h_donors": 1
+  },
+  "lipinski_checks": {
+    "logp_compliant": true,
+    "mw_compliant": true,
+    "hba_compliant": true,
+    "hbd_compliant": true
+  },
+  "overall_compliant": true,
+  "violations": 0
+}

@@ -1,0 +1,11 @@
+{
+  "logp_value": -1,
+  "mw_value": 460,
+  "hba_value": 1,
+  "hbd_value": 1,
+  "molecule_hash": 2870863897,
+  "logp_threshold": 5000,
+  "mw_threshold": 5000,
+  "hba_threshold": 10,
+  "hbd_threshold": 5
+}

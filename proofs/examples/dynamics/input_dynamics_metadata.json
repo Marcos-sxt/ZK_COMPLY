@@ -1,0 +1,19 @@
+{
+  "smiles": "CCO",
+  "rmsd_angstrom": 0.546,
+  "energy_kj_mol": -24.6,
+  "thresholds": {
+    "rmsd": 2.0,
+    "energy": -100.0
+  },
+  "compliance_checks": {
+    "rmsd_ok": true,
+    "energy_ok": false
+  },
+  "is_compliant": false,
+  "simulation_params": {
+    "box_size": 5.0,
+    "receptor_gro": null,
+    "topology_top": null
+  }
+}

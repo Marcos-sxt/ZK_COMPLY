@@ -1,0 +1,6 @@
+{
+  "smiles": "CCO",
+  "toxicity_score": 0.2,
+  "threshold": 0.5,
+  "is_compliant": true
+}
