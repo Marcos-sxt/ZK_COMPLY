@@ -326,12 +326,14 @@ python src/zk_pipeline.py --smiles "CCO" --module logp
 
 Each module allows configuring compliance thresholds:
 
-```toml
-# zk-comply-logp/Prover.toml
-smiles_hash = "0x123..."
-min_logp = -5000     # Minimum LogP (*1000)
-max_logp = 5000      # Maximum LogP (*1000)
-logp = 2300          # Current value (*1000)
+```json
+// input.json (used by snarkjs to generate witness)
+{
+  "smiles_hash": "123...456",
+  "min_logp": "-5000",
+  "max_logp": "5000",
+  "logp": "2300"
+}
 ```
 
 ### Blockchain Integration
@@ -369,12 +371,6 @@ This project is **private property** and is protected by a proprietary license.
 
 For commercial licensing inquiries, contact via GitHub Issues.
 
-## 🤝 Contribution
-
-Contributions are welcome via Pull Requests, but note that:
-- By contributing, you agree that your contribution becomes part of the proprietary project
-- The owner retains all rights over incorporated contributions
-- Contributions do not grant commercial usage rights
 
 ## 🙏 Acknowledgments
 
