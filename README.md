@@ -1,6 +1,5 @@
 # 🧬 ZK_COMPLY v2.0 - Pharmaceutical ADMET Compliance with Zero-Knowledge Proofs
-
-**STATUS: RELEASE v2.0 ✅ | 7 Scientific Modules ✅ | zkVerify Ready 🚀**
+**STATUS: RELEASE v2.0 ✅ | 7 Scientific Modules ✅ | zkVerify Integrated 🚀**
 
 [![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
 [![Python 3.13+](https://img.shields.io/badge/python-3.13+-blue.svg)](https://www.python.org/downloads/)
@@ -25,7 +24,7 @@
 **FULL PIPELINE:**
 - ✅ **Witness Generation**: 7 fully functional scientific modules
 - ✅ **ZK Proofs**: Circom circuits + Groth16 via snarkjs
-- ✅ **Verification**: Local and zkVerify ready
+- ✅ **Verification**: Local and zkVerify fully integrated
 - ✅ **REST API**: Endpoints for all modules
 - ✅ **Robust Fallbacks**: Guaranteed operation without external dependencies
 
@@ -99,9 +98,9 @@ ZK_COMPLY v2.0 is a complete **ADMET compliance system** (Absorption, Distributi
 - **CYP450**: Hepatic enzymatic metabolism
 
 ### 🔒 **Zero-Knowledge Proofs**
-- **Noir circuits** for each scientific module
+- **Circom circuits** for each scientific module
 - **Automatic witness generation**
-- **ACIR compilation** for proving backends
+- **snarkjs usage** for proving backends
 - **Cryptographic verification** of compliance
 
 ### 🚀 **Complete REST API**
@@ -117,9 +116,9 @@ ZK_COMPLY v2.0 is a complete **ADMET compliance system** (Absorption, Distributi
 │   Computation   │    │   Zero-Knowledge │    │   Verification  │
 │   Scientific    │ ── │    Circuits      │ ── │   Blockchain    │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
-      RDKit               Noir Language          zkVerify Chain
-   AutoDock Vina           ACIR Compiler        Smart Contracts
-    GROMACS ML              Barretenberg        Proof Registry
+      RDKit               Circom Language        zkVerify Chain
+   AutoDock Vina           snarkjs Compiler     Smart Contracts
+    GROMACS ML              Groth16 Prover      Proof Registry
 ```
 
 ## 🚀 Quick Start v2.0
@@ -292,16 +291,16 @@ ZK_COMPLY/
 
 ```
 zk-comply/
-├── 📁 zk-comply-logp/           # LogP Module + Noir Circuit
-│   ├── compute_logp.py          # Computation script
-│   ├── src/main.nr              # Zero-Knowledge circuit
-│   ├── Nargo.toml               # Noir configuration
-│   └── Prover.toml              # Proof parameters
-├── 📁 zk-comply-pka/            # pKa Module + Noir Circuit
-├── 📁 zk-comply-docking/        # Docking Module + Noir Circuit
-├── 📁 zk-comply-qsar/           # QSAR Module + Noir Circuit
-├── 📁 zk-comply-dynamics/       # Dynamics Module + Noir Circuit
-├── 📁 zk-comply-cyp450/         # CYP450 Module + Noir Circuit
+├── 📁 circuits/                 # Circom Circuits
+│   ├── compliance_circuit.circom# Multi-criteria circuit
+│   ├── simple_compliance.circom # LogP compliance circuit
+│   ├── circuit.zkey             # Proving key
+│   └── verification_key.json    # Verification key
+├── 📁 src/                      # Python services
+│   ├── witness_generator.py     # Witness generation for Circom
+│   ├── snarkjs_service.py       # snarkjs integration
+│   ├── zkverify_service.py      # Submission to zkVerify
+│   └── zk_pipeline.py           # Full pipeline
 ├── 📄 main.py                   # Main FastAPI API
 ├── 📄 test_api.py               # API tests
 ├── 📄 requirements.txt          # Python dependencies
@@ -315,11 +314,10 @@ zk-comply/
 python test_api.py
 
 # Test specific module
-cd zk-comply-logp
-python compute_logp.py "CCO"  # Ethanol
+python src/witness_generator.py "CCO" logp
 
-# Test Noir circuit
-nargo test
+# Test Circom circuit pipeline
+python src/zk_pipeline.py --smiles "CCO" --module logp
 ```
 
 ## 🔧 Advanced Configuration
@@ -338,10 +336,10 @@ logp = 2300          # Current value (*1000)
 
 ### Blockchain Integration
 
-For zkVerify integration (in development):
+For zkVerify integration:
 
 ```python
-# Future: Automatic proof submission
+# Automatic proof submission
 await zk_comply.submit_to_zkverify(
     smiles="CC(=O)OC1=CC=CC=C1C(=O)O",
     proofs=generated_proofs
@@ -351,7 +349,7 @@ await zk_comply.submit_to_zkverify(
 ## 🛣️ Roadmap
 
 - [x] **Phase 1**: Scientific core + ZK circuits (✅ Complete)
-- [ ] **Phase 2**: Barretenberg integration + zkVerify
+- [x] **Phase 2**: Circom migration + zkVerify integration (✅ Complete)
 - [ ] **Phase 3**: Web interface + industrial partnerships
 - [ ] **Phase 4**: Multi-chain + advanced AI
 
@@ -380,7 +378,7 @@ Contributions are welcome via Pull Requests, but note that:
 
 ## 🙏 Acknowledgments
 
-- **Aztec Network** for the Noir language
+- **Iden3** for snarkjs and Circom ecosystem
 - **RDKit** for the computational chemistry library
 - **ZK Community** for support and tools
 
@@ -394,44 +392,3 @@ Contributions are welcome via Pull Requests, but note that:
 **ZK_COMPLY - The future of pharmaceutical compliance is private, verifiable, and decentralized.** 🚀
 
 **© 2025 Marcos Antonio Morais Braga - All rights reserved. Commercial use not authorized.**
-
-## 🎉 **ZK_COMPLY PROJECT - UPDATED DOCUMENTATION**
-
-All files have been updated with the current project status:
-
-### **📋 Documentation Files Created/Updated:**
-
-1. **`README.md`** ✅
-   - Executive summary with current status
-   - Quick start guide with commands
-   - Tested and working examples
-   - Circom + snarkjs + zkVerify architecture
-
-2. **`STATUS_FINAL.md`** ✅
-   - Complete migration status
-   - Operational infrastructure
-   - ZK proofs successfully generated
-   - Useful commands for testing
-
-3. **`INSTRUCOES_CONTINUACAO.md`** ✅
-   - Instructions for next conversation
-   - Identified zkVerify issue
-   - Diagnostic commands
-   - Specific next steps
-
-### **🎯 Summary Status:**
-
-**✅ 100% WORKING:**
-- Python → Circom → snarkjs → Groth16 pipeline (currently using Ultraplonk while development)
-- FastAPI with 8 operational endpoints
-- 3 molecules tested with valid proofs
-- Full backend for demonstrations
-
-**🚧 PENDING (10%):**
-- Final integration with zkVerify blockchain (in this version)
-- Real submission of generated proofs
-- Extraction of transaction hashes
-
-Functional demo can be found at [Here](https://milestone4-zkcomply.vercel.app/) [(repo)](https://github.com/Marcos-sxt/Milestone4-zkcomply)
-
-**The project is 90% complete and ready for demonstrations!** 🚀
